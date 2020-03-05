@@ -192,14 +192,83 @@ img, audio, video {
 */
 
 html {
-  font-size: 1.375em; /* 22px */
-  line-height: 1.182em; /* 26px / ~ 120% */
-  padding: 1.182em; /* 26px / ~ 120% */
+  font-family: Helvetica, serif, Arial;
+  font-size: 1em;
+  line-height: 1em;
+  padding: 2em;
+  background-color: white;
   text-rendering: optimizeLegibility;
+  text-align: center;
+}
+#submit{
+  font-family: Helvetica, serif, Arial;
+  background-color: lightgray;
+  font-size: 2em;
+  line-height: 2em;
+}
+h1{
+  color: #800000;
+  font-size: 2em;
+  line-height: 2em;
+}
+form {
+  padding: 5em;
+  background-color: #FFDEAD;
+}
+input {
+  background-color: lightgray;
+  color: white;
+}
+label {
+  color: #484848;
+  font-size: 1.182em;
+  line-height: 1.375em;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 1em;
+}
+p{
+  color: #484848;
+  font-size: 1.182em;
+  line-height: 1.375em;
+  padding: 1em;
 }
 
-label {
-  display: block;
+input {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@media screen and (min-width: 480px) {
+  h1,p,label{
+    font-size: 1em;
+    line-height: 1em;
+  }
+
+  #input-age-verification{
+    padding-bottom: 1em;
+  }
+  #submit{
+    font-family: Helvetica, serif, Arial;
+    font-size: 1.75em;
+    line-height: 1.375em;
+    background-color: lightgray;
+
+  }
+}
+
+@media screen and (max-width: 800px) {
+  h1,p,label{
+    line-height: 2em;
+    font-size: 2em;
+  }
+
+  #submit{
+    font-family: Arial, serif, Helvetica;
+    font-size: 1.75em;
+    line-height: 1.375em;
+    background-color: lightgray;
+  }
 }
 
 /* ===== LAYOUT STYLES ====== */
